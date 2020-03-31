@@ -180,11 +180,40 @@
     <Compile Include="Migrations\202003300600149_InitialModel.designer.cs">
       <DependentUpon>202003300600149_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003300804542_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202003300804542_AddIsSubscribedToCustomer.designer.cs">
+      <DependentUpon>202003300804542_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003310742335_AddMembershipType.cs" />
+    <Compile Include="Migrations\202003310742335_AddMembershipType.designer.cs">
+      <DependentUpon>202003310742335_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003310813171_populateMembershipTypes.cs" />
+    <Compile Include="Migrations\202003310813171_populateMembershipTypes.designer.cs">
+      <DependentUpon>202003310813171_populateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003310939227_ApplyAnnotationToCustomerName.cs" />
+    <Compile Include="Migrations\202003310939227_ApplyAnnotationToCustomerName.designer.cs">
+      <DependentUpon>202003310939227_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311231159_IncludeNamePropertyInCustomerClass.cs" />
+    <Compile Include="Migrations\202003311231159_IncludeNamePropertyInCustomerClass.designer.cs">
+      <DependentUpon>202003311231159_IncludeNamePropertyInCustomerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311236587_IncludedRequiredFieldInCustomerName.cs" />
+    <Compile Include="Migrations\202003311236587_IncludedRequiredFieldInCustomerName.designer.cs">
+      <DependentUpon>202003311236587_IncludedRequiredFieldInCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311253071_ChangeValuesInCustomerName.cs" />
+    <Compile Include="Migrations\202003311253071_ChangeValuesInCustomerName.designer.cs">
+      <DependentUpon>202003311253071_ChangeValuesInCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -271,6 +300,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202003300600149_InitialModel.resx">
       <DependentUpon>202003300600149_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003300804542_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>202003300804542_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003310742335_AddMembershipType.resx">
+      <DependentUpon>202003310742335_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003310813171_populateMembershipTypes.resx">
+      <DependentUpon>202003310813171_populateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003310939227_ApplyAnnotationToCustomerName.resx">
+      <DependentUpon>202003310939227_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311231159_IncludeNamePropertyInCustomerClass.resx">
+      <DependentUpon>202003311231159_IncludeNamePropertyInCustomerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311236587_IncludedRequiredFieldInCustomerName.resx">
+      <DependentUpon>202003311236587_IncludedRequiredFieldInCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311253071_ChangeValuesInCustomerName.resx">
+      <DependentUpon>202003311253071_ChangeValuesInCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
