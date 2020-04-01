@@ -212,9 +212,54 @@
     <Compile Include="Migrations\202003311327502_BirthDateInCustomer.designer.cs">
       <DependentUpon>202003311327502_BirthDateInCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003311524111_GenreClassAdded.cs" />
+    <Compile Include="Migrations\202003311524111_GenreClassAdded.designer.cs">
+      <DependentUpon>202003311524111_GenreClassAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311529526_MovieClassUpdated.cs" />
+    <Compile Include="Migrations\202003311529526_MovieClassUpdated.designer.cs">
+      <DependentUpon>202003311529526_MovieClassUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311534157_MovieUpdatedWithGenreId.cs" />
+    <Compile Include="Migrations\202003311534157_MovieUpdatedWithGenreId.designer.cs">
+      <DependentUpon>202003311534157_MovieUpdatedWithGenreId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311542475_ChnageColumnName.cs" />
+    <Compile Include="Migrations\202003311542475_ChnageColumnName.designer.cs">
+      <DependentUpon>202003311542475_ChnageColumnName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003311606502_TestForMovie.cs" />
+    <Compile Include="Migrations\202003311606502_TestForMovie.designer.cs">
+      <DependentUpon>202003311606502_TestForMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004010253579_AddValuesToGenre.cs" />
+    <Compile Include="Migrations\202004010253579_AddValuesToGenre.designer.cs">
+      <DependentUpon>202004010253579_AddValuesToGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004010309158_MovieChangeInIdentityModel.cs" />
+    <Compile Include="Migrations\202004010309158_MovieChangeInIdentityModel.designer.cs">
+      <DependentUpon>202004010309158_MovieChangeInIdentityModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004010316208_UpdateInMovieModel.cs" />
+    <Compile Include="Migrations\202004010316208_UpdateInMovieModel.designer.cs">
+      <DependentUpon>202004010316208_UpdateInMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004010321093_NewlyAddedGenre.cs" />
+    <Compile Include="Migrations\202004010321093_NewlyAddedGenre.designer.cs">
+      <DependentUpon>202004010321093_NewlyAddedGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004010331544_ModificationInMovie.cs" />
+    <Compile Include="Migrations\202004010331544_ModificationInMovie.designer.cs">
+      <DependentUpon>202004010331544_ModificationInMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004010341022_VluesToGenre.cs" />
+    <Compile Include="Migrations\202004010341022_VluesToGenre.designer.cs">
+      <DependentUpon>202004010341022_VluesToGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -284,6 +329,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -328,6 +374,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003311327502_BirthDateInCustomer.resx">
       <DependentUpon>202003311327502_BirthDateInCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311524111_GenreClassAdded.resx">
+      <DependentUpon>202003311524111_GenreClassAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311529526_MovieClassUpdated.resx">
+      <DependentUpon>202003311529526_MovieClassUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311534157_MovieUpdatedWithGenreId.resx">
+      <DependentUpon>202003311534157_MovieUpdatedWithGenreId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311542475_ChnageColumnName.resx">
+      <DependentUpon>202003311542475_ChnageColumnName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003311606502_TestForMovie.resx">
+      <DependentUpon>202003311606502_TestForMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010253579_AddValuesToGenre.resx">
+      <DependentUpon>202004010253579_AddValuesToGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010309158_MovieChangeInIdentityModel.resx">
+      <DependentUpon>202004010309158_MovieChangeInIdentityModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010316208_UpdateInMovieModel.resx">
+      <DependentUpon>202004010316208_UpdateInMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010321093_NewlyAddedGenre.resx">
+      <DependentUpon>202004010321093_NewlyAddedGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010331544_ModificationInMovie.resx">
+      <DependentUpon>202004010331544_ModificationInMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010341022_VluesToGenre.resx">
+      <DependentUpon>202004010341022_VluesToGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
