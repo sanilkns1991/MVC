@@ -11,7 +11,7 @@ namespace Vidly.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Please enter Movie's name")]
         [StringLength(255)]
         public string Name { get; set; }
 
@@ -24,7 +24,8 @@ namespace Vidly.Models
         [Column(TypeName = "datetime2")]
         public DateTime DateAdded { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="The number in stock field is required")]
+        [Range(1,20,ErrorMessage ="The field number in stock must be between 1 and 20")]
         [Display(Name = "Number In Stock")]
         public int NumberInStock { get; set; }
 
