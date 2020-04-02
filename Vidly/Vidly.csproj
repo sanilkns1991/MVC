@@ -256,6 +256,26 @@
     <Compile Include="Migrations\202004010341022_VluesToGenre.designer.cs">
       <DependentUpon>202004010341022_VluesToGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004010636367_MembershipIncludedInIdentityModel.cs" />
+    <Compile Include="Migrations\202004010636367_MembershipIncludedInIdentityModel.designer.cs">
+      <DependentUpon>202004010636367_MembershipIncludedInIdentityModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004011228451_TestCustomerAfterRemovingMembershipId.cs" />
+    <Compile Include="Migrations\202004011228451_TestCustomerAfterRemovingMembershipId.designer.cs">
+      <DependentUpon>202004011228451_TestCustomerAfterRemovingMembershipId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004011237313_RevertCutomerModel.cs" />
+    <Compile Include="Migrations\202004011237313_RevertCutomerModel.designer.cs">
+      <DependentUpon>202004011237313_RevertCutomerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004011240027_MembershipIdAddedBack.cs" />
+    <Compile Include="Migrations\202004011240027_MembershipIdAddedBack.designer.cs">
+      <DependentUpon>202004011240027_MembershipIdAddedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004020234188_ForeignKeyInCustomer.cs" />
+    <Compile Include="Migrations\202004020234188_ForeignKeyInCustomer.designer.cs">
+      <DependentUpon>202004020234188_ForeignKeyInCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -266,6 +286,7 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -330,6 +351,7 @@
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -407,6 +429,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004010341022_VluesToGenre.resx">
       <DependentUpon>202004010341022_VluesToGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004010636367_MembershipIncludedInIdentityModel.resx">
+      <DependentUpon>202004010636367_MembershipIncludedInIdentityModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004011228451_TestCustomerAfterRemovingMembershipId.resx">
+      <DependentUpon>202004011228451_TestCustomerAfterRemovingMembershipId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004011237313_RevertCutomerModel.resx">
+      <DependentUpon>202004011237313_RevertCutomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004011240027_MembershipIdAddedBack.resx">
+      <DependentUpon>202004011240027_MembershipIdAddedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004020234188_ForeignKeyInCustomer.resx">
+      <DependentUpon>202004020234188_ForeignKeyInCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
